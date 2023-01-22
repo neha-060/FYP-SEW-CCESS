@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SEW-CCESS</title>
+        {% load static %}
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href= "{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="global-container container">
+            <div class="card login-form" style="width: 100%">
+            <div class="card-body container" style="width: 40%">
+                <h3 class="card-title text-center">Register</h3>
+                <div class="card-text">
+                    {% if messages %}
+                    
+                            {% for message in messages %}
+                            <div class="alert alert-info">
+                                {{ message }}
+                            </div>
+                            {% endfor %}
+                      
+                        {% endif %}
+                    <!--
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                    <form method="post">
+                        {%  csrf_token %}
+                        <!-- to error: add class "has-danger" -->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                                <input type="text" name="username" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputaddress">Email address</label>
+                            <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" optional>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputaddress">First Name</label>
+                            <input type="text" name="first_name" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputaddress">Last Name</label>
+                            <input type="text" name="last_name" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Address</label>
+                            <input type="text" name="address" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Shop Address</label>
+                            <input type="text" name="address" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp"optional>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Phone No</label>
+                            <input type="tel" name="phone_number" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">CNIC</label>
+                            <input type="text" name="cnic" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" title="CNIC must be in a proper format like xxxxx-xxxxxxx-x">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="password" class="form-control form-control-sm" id="exampleInputPassword1" minlength="8" maxlength="16" pattern=".{8,}" title="Password must be at least 8 characters long">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" name="password" class="form-control form-control-sm" id="exampleInputPassword1" minlength="8" maxlength="16" pattern=".{8,}" title="Password must be at least 8 characters long">
+                        </div>
+                        <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
+    
+                        <button type="submit" class="btn btn-primary btn-block mt-2" value="tailor_signup_view">Sign in</button>
+                        
+                        <div class="sign-up mt-2">
+                            Already have an account? <a href="/login_t">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>

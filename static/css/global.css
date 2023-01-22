@@ -1,0 +1,16 @@
+:root {
+  /* fonts */
+  --font-homenaje: Homenaje;
+  --font-inria-sans: "Inria Sans";
+  --font-inria-serif: "Inria Serif";
+  --logo: Lato;
+
+  /* font sizes */
+  --font-size-sm: 15px;
+  --font-size-base: 20px;
+  --logo-size: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #6b6b6b;
+}

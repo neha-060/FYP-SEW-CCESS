@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.sign-up-page-child {
+  position: absolute;
+  margin: 0 !important;
+  height: 8.71%;
+  width: 77.93%;
+  top: 15.69%;
+  right: 9.15%;
+  bottom: 75.6%;
+  left: 12.92%;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  box-sizing: border-box;
+  z-index: 0;
+}
+.sew-ccess {
+  position: relative;
+  font-size: var(--logo-size);
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  font-family: var(--logo);
+  color: #000;
+  display: inline-block;
+  width: 191.26px;
+  height: 52.83px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.join-as-a {
+  position: absolute;
+  margin: 0 !important;
+  height: 9.33%;
+  width: 104.52%;
+  top: 17.76%;
+  left: 2.44%;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.58);
+  z-index: 2;
+}
+.sign-up-page-inner,
+.sign-up-page-item {
+  border: 3px solid rgba(0, 0, 0, 0.04);
+  background-color: var(--color-white);
+  position: absolute;
+  margin: 0 !important;
+  height: 16.71%;
+  width: 30%;
+  top: 41.84%;
+  right: 51.56%;
+  bottom: 41.45%;
+  left: 20%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  z-index: 3;
+}
+.sign-up-page-inner {
+  height: 16.81%;
+  width: 30%;
+  top: 41.7%;
+  right: 4.5%;
+  bottom: 41.49%;
+  left: 51.94%;
+  border: 3px solid rgba(0, 0, 0, 0.03);
+  z-index: 4;
+}
+.im-a-tailor {
+  height: 8.94%;
+  width: 20%;
+  top: 46%;
+  left: 25%;
+  z-index: 6;
+}
+.already-have-an,
+.create-account,
+.im-a-customer,
+.im-a-tailor {
+  position: absolute;
+  margin: 0 !important;
+  display: inline-block;
+}
+.im-a-customer {
+  height: 8.94%;
+  width: 20%;
+  top: 46%;
+  left: 57%;
+  z-index: 6;
+}
+.already-have-an,
+.create-account {
+  font-size: var(--font-size-sm);
+}
+.create-account {
+  bottom: 167.06px;
+  left: calc(50% - 59.5px);
+  font-family: var(--font-inria-sans);
+  color: rgba(0, 0, 0, 0.79);
+  width: 119.92px;
+  height: 28.94px;
+  flex-shrink: 0;
+  z-index: 7;
+}
+.already-have-an {
+  height: 1.83%;
+  width: 60.74%;
+  top: 65%;
+  left: 19.43%;
+  font-family: var(--font-homenaje);
+  color: rgba(0, 0, 0, 0.37);
+  z-index: 8;
+}
+.sign-up-page {
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  box-sizing: border-box;
+  width: 100%;
+  height: 928px;
+  display: flex;
+  flex-direction: column;
+  padding: 92px 14px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-inria-serif);
+}
